@@ -16,7 +16,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
 
-        <link href="css/tableau.css" rel="stylesheet" />
+        <link href="css/persoStyle.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -31,7 +31,8 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#propos">A propos de moi</a></li>
                         <li class="nav-item"><a class="nav-link" href="#parcours">Parcours</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#competence">Compétences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Projet</a></li><!--J'ai laissé l'ancien ancrage car elle a un lien avec les card projets-->
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <!--<li class="nav-item"><a class="nav-link" href="#team">Team</a></li>-->
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -153,60 +154,54 @@
                             <div class="timeline-body"><p class="text-muted">Création d’une activité dédiée à la vulgarisation de l’investissement et à l’éducation financière. Je conçois des formations accessibles à tous, gère la stratégie de contenu, la partie technique (site, automatisation) ainsi que le suivi des performances.<br><a href="formatnebu.html">En savoir plus</a> </p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </section>
         <!-- Services-->
-        <section class="page-section" id="services">
+        <section class="page-section" id="competence">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Compétences</h2>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                <section id="competences">
+                    <!-- Dev -->
+                    <div class="category-container">
+                        <h2>Développement Web & Logiciel</h2>
+                        <div class="card-grid">
+                        <div class="card"><div class="card-inner"><div class="card-front">HTML</div><div class="card-back">Structure des pages web</div></div></div>
+                        <div class="card"><div class="card-inner"><div class="card-front">CSS</div><div class="card-back">Mise en forme</div></div></div>
+                        <div class="card"><div class="card-inner"><div class="card-front">PHP</div><div class="card-back">Backend côté serveur</div></div></div>
+                        <div class="card"><div class="card-inner"><div class="card-front">Python</div><div class="card-back">Algorithme</div></div></div>
+                        <div class="card"><div class="card-inner"><div class="card-front">SQL</div><div class="card-back">Requêtes & gestion BDD</div></div></div>
+                        <div class="card"><div class="card-inner"><div class="card-front">Kotlin</div><div class="card-back">POO et jeu</div></div></div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+
+                    <!-- Game Dev -->
+                    <div class="category-container">
+                        <h2>Game Dev</h2>
+                        <div class="card-grid">
+                        <div class="card"><div class="card-inner"><div class="card-front">Unreal Engine 5.6</div><div class="card-back">Blueprint, 3D, logiques de jeu</div></div></div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+
+                    <!-- Économie -->
+                    <div class="category-container">
+                        <h2>Économie & Finance</h2>
+                        <div class="card-grid">
+                        <div class="card"><div class="card-inner"><div class="card-front">Lecture graphique</div><div class="card-back">Analyse technique bourse</div></div></div>
+                        <div class="card"><div class="card-inner"><div class="card-front">Fondamentaux d’entreprise</div><div class="card-back">Rentabilité, modèle économique</div></div></div>
+                        <div class="card"><div class="card-inner"><div class="card-front">Gestion de patrimoine</div><div class="card-back">Multi-actifs, fiscalité, stratégie</div></div></div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
         </section>
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h2 class="section-heading text-uppercase">Projet</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row">
@@ -220,7 +215,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
+                                <div class="portfolio-caption-heading">GeoWorld</div>
                                 <div class="portfolio-caption-subheading text-muted">Illustration</div>
                             </div>
                         </div>
@@ -235,7 +230,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
+                                <div class="portfolio-caption-heading">Bataille Naval</div>
                                 <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
                             </div>
                         </div>
@@ -250,8 +245,8 @@
                                 <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
+                                <div class="portfolio-caption-heading">HakunaBanana</div>
+                                <div class="portfolio-caption-subheading text-muted">Jeu 3D TopDownShooter</div>
                             </div>
                         </div>
                     </div>
