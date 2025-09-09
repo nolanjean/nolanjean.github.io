@@ -1,0 +1,136 @@
+/* Tableau cv */
+.disdis{
+    display: flex;
+    justify-content: center;
+}
+
+.cv{
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    text-align: left;
+}
+
+.cv thead,tfoot{
+    text-align: center;
+}
+
+.cv th{
+    padding-left: 20px;
+}
+.hauteur{
+    padding-top: 25px;
+}
+/* Bouton cv */
+.download-btn {
+    background-color: #ffbd33;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .download-btn:hover {
+    background-color: #e6a828;
+  }
+  /* Tableau cv fin*/
+  
+/* Les compétence */
+
+  
+  #competences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f0f2f5;
+  }
+
+  #competences .category-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    max-width: 340px;
+    width: 100%;
+  }
+
+  #competences .category-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  #competences .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+
+  #competences .card {
+    background: #f4f4f4;
+    border-radius: 0.5rem;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  #competences .card-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  #competences .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  #competences .card-front, 
+  #competences .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #competences .card-front {
+    background-color: #f4f4f4;
+  }
+
+  #competences .card-back {
+    background-color: #e0e0e0;
+    transform: rotateY(180deg);
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+/* Les compétence fin */
+
+/* test chatgpt avec JS pour animation */
+.timeline li {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.timeline li.show {
+  opacity: 1;
+  transform: translateY(0);
+}
